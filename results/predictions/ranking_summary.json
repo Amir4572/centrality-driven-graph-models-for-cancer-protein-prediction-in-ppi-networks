@@ -1,0 +1,180 @@
+{
+  "weight_optimization": {
+    "weights": {
+      "degree": 0.0,
+      "betweenness": 0.0002,
+      "closeness": 0.9987,
+      "eigenvector": 0.0005,
+      "pagerank": 0.0006
+    },
+    "weights_vector": [
+      1.9944350558299492e-05,
+      0.00018566295415563665,
+      0.9987283425313559,
+      0.0004921482312113332,
+      0.0005739019327186989
+    ],
+    "equal_weights_val_pr_auc": 0.11075,
+    "equal_weights_val_roc_auc": 0.76829,
+    "optimized_val_pr_auc": 0.17449,
+    "optimized_val_roc_auc": 0.80324
+  },
+  "top_10_novel_candidates": [
+    {
+      "protein_id": "9606.ENSP00000329357",
+      "gene_symbol": "SP1",
+      "cancer_association_probability": 0.9189866185188293,
+      "composite_centrality_score": 0.8461947326975611,
+      "degree": 129
+    },
+    {
+      "protein_id": "9606.ENSP00000378974",
+      "gene_symbol": "MAPK8",
+      "cancer_association_probability": 0.9161020517349243,
+      "composite_centrality_score": 0.8684304663609894,
+      "degree": 181
+    },
+    {
+      "protein_id": "9606.ENSP00000306245",
+      "gene_symbol": "FOS",
+      "cancer_association_probability": 0.9119291305541992,
+      "composite_centrality_score": 0.8442488936847297,
+      "degree": 160
+    },
+    {
+      "protein_id": "9606.ENSP00000325120",
+      "gene_symbol": "PGR",
+      "cancer_association_probability": 0.9101851582527161,
+      "composite_centrality_score": 0.8176534342466891,
+      "degree": 72
+    },
+    {
+      "protein_id": "9606.ENSP00000497069",
+      "gene_symbol": "IGF1R",
+      "cancer_association_probability": 0.9077322483062744,
+      "composite_centrality_score": 0.8398519976446631,
+      "degree": 142
+    },
+    {
+      "protein_id": "9606.ENSP00000262238",
+      "gene_symbol": "YY1",
+      "cancer_association_probability": 0.9076583981513977,
+      "composite_centrality_score": 0.8126542424176324,
+      "degree": 124
+    },
+    {
+      "protein_id": "9606.ENSP00000367830",
+      "gene_symbol": "PRKCZ",
+      "cancer_association_probability": 0.9076086282730103,
+      "composite_centrality_score": 0.8072312166584606,
+      "degree": 81
+    },
+    {
+      "protein_id": "9606.ENSP00000401303",
+      "gene_symbol": "SHC1",
+      "cancer_association_probability": 0.9072791934013367,
+      "composite_centrality_score": 0.8167704205309834,
+      "degree": 137
+    },
+    {
+      "protein_id": "9606.ENSP00000226574",
+      "gene_symbol": "NFKB1",
+      "cancer_association_probability": 0.9065839648246765,
+      "composite_centrality_score": 0.8853814421692705,
+      "degree": 285
+    },
+    {
+      "protein_id": "9606.ENSP00000264110",
+      "gene_symbol": "ATF2",
+      "cancer_association_probability": 0.906557023525238,
+      "composite_centrality_score": 0.8023376424218858,
+      "degree": 96
+    }
+  ],
+  "top_20_novel_candidates_count": 20,
+  "top_50_novel_candidates_count": 50,
+  "top_10_centrality_hubs": [
+    {
+      "protein_id": "9606.ENSP00000340820",
+      "gene_symbol": "MAPT",
+      "is_known_cancer": false,
+      "composite_centrality_score": 0.9993639914649158,
+      "cancer_association_probability": 0.785768449306488,
+      "degree": 616
+    },
+    {
+      "protein_id": "9606.ENSP00000269305",
+      "gene_symbol": "TP53",
+      "is_known_cancer": true,
+      "composite_centrality_score": 0.9960972285025295,
+      "cancer_association_probability": 0.8652046322822571,
+      "degree": 872
+    },
+    {
+      "protein_id": "9606.ENSP00000494750",
+      "gene_symbol": "ACTB",
+      "is_known_cancer": true,
+      "composite_centrality_score": 0.9604330330362979,
+      "cancer_association_probability": 0.8699575066566467,
+      "degree": 612
+    },
+    {
+      "protein_id": "9606.ENSP00000275493",
+      "gene_symbol": "EGFR",
+      "is_known_cancer": true,
+      "composite_centrality_score": 0.953992898243622,
+      "cancer_association_probability": 0.8901594281196594,
+      "degree": 475
+    },
+    {
+      "protein_id": "9606.ENSP00000451828",
+      "gene_symbol": "AKT1",
+      "is_known_cancer": true,
+      "composite_centrality_score": 0.9514386022310027,
+      "cancer_association_probability": 0.899104654788971,
+      "degree": 454
+    },
+    {
+      "protein_id": "9606.ENSP00000495360",
+      "gene_symbol": "CTNNB1",
+      "is_known_cancer": true,
+      "composite_centrality_score": 0.9478047344716227,
+      "cancer_association_probability": 0.8605022430419922,
+      "degree": 489
+    },
+    {
+      "protein_id": "9606.ENSP00000380070",
+      "gene_symbol": "GAPDH",
+      "is_known_cancer": false,
+      "composite_centrality_score": 0.9465306373124872,
+      "cancer_association_probability": 0.8237683773040771,
+      "degree": 358
+    },
+    {
+      "protein_id": "9606.ENSP00000265748",
+      "gene_symbol": "ANLN",
+      "is_known_cancer": false,
+      "composite_centrality_score": 0.9437078578514467,
+      "cancer_association_probability": 0.835498571395874,
+      "degree": 571
+    },
+    {
+      "protein_id": "9606.ENSP00000478887",
+      "gene_symbol": "MYC",
+      "is_known_cancer": true,
+      "composite_centrality_score": 0.9325154791759479,
+      "cancer_association_probability": 0.9202272891998291,
+      "degree": 398
+    },
+    {
+      "protein_id": "9606.ENSP00000335153",
+      "gene_symbol": "HSP90AA1",
+      "is_known_cancer": true,
+      "composite_centrality_score": 0.9305989452532946,
+      "cancer_association_probability": 0.8941152691841125,
+      "degree": 378
+    }
+  ],
+  "top_50_model_known_cancer_enrichment": 40,
+  "top_50_centrality_known_cancer_enrichment": 29
+}

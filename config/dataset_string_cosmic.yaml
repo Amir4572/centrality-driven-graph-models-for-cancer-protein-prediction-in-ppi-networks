@@ -1,0 +1,45 @@
+# Primary Public Biological Dataset Configuration
+# Uses STRING v12.5 Homo sapiens PPI + COSMIC Cancer Gene Census v104 GRCh38
+
+dataset_name: "STRING_v12.5_COSMIC_v104"
+dataset_type: "string_cosmic"
+description: "Human Protein-Protein Interaction network from STRING v12.5 (high-confidence interactions, combined_score >= 700) labeled with curated cancer driver genes from COSMIC Cancer Gene Census v104 (GRCh38)."
+
+paths:
+  # Paths are resolved relative to the cancer-ppi-prediction/ project root
+  string_links: "data/raw/9606.protein.links.v12.5.txt.gz"
+  string_info: "data/raw/9606.protein.info.v12.5.txt.gz"
+  cosmic_census: "data/raw/Cosmic_CancerGeneCensus_v104_GRCh38.tsv.gz"
+
+preprocessing:
+  score_threshold: 700            # STRING high-confidence cutoff (0-1000 scale)
+  include_cosmic_tiers: [1, 2]    # Include Tier 1 and Tier 2 curated cancer genes
+  remove_self_loops: true
+  deduplicate_edges: true
+  strip_cancer_leak_terms: true   # Remove cancer/tumor terms from functional text to prevent leakage
+  max_tfidf_features: 500
+  functional_svd_dims: 32
+  spectral_embedding_dims: 32
+
+centrality:
+  betweenness_k_pivots: 400       # Exact if |V| <= 1500, seeded k-pivot approximation otherwise
+  pagerank_alpha: 0.85
+  pagerank_max_iter: 200
+  eigenvector_max_iter: 300
+
+training:
+  random_seed: 42
+  test_size: 0.15
+  val_size: 0.15
+  cv_folds: 5
+  gnn_epochs: 120
+  gnn_hidden_dim: 64
+  gnn_lr: 0.01
+  gnn_weight_decay: 0.0005
+  gnn_patience: 20
+
+attribution:
+  string_url: "https://string-db.org/"
+  string_license: "CC BY 4.0 (Creative Commons Attribution 4.0)"
+  cosmic_url: "https://cancer.sanger.ac.uk/census"
+  cosmic_license: "COSMIC Academic / Non-Commercial License (Wellcome Sanger Institute)"

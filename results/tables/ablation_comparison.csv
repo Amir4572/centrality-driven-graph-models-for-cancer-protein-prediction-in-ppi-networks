@@ -1,0 +1,6 @@
+ablation_id,description,num_features,val_pr_auc,test_roc_auc,test_pr_auc,test_f1_score,test_precision,test_recall
+A_Centrality_Only,A. Centrality-Only Features,11,0.2085,0.7869,0.2158,0.2723,0.2667,0.2783
+B_Functional_Only,B. Functional Annotation-Only Features,35,0.1465,0.7643,0.1601,0.238,0.1765,0.3652
+C_Centrality_Plus_Functional,C. Centrality + Functional Annotations,46,0.2279,0.8526,0.3151,0.3319,0.325,0.3391
+D_Graph_Embeddings_Only,D. Graph Topology & Spectral Embeddings Only,51,0.2421,0.8153,0.2757,0.3454,0.3209,0.3739
+E_Combined_Centrality_Graph,E. Combined Centrality-Driven Graph Model (All),113,0.2323,0.8391,0.3377,0.3682,0.3548,0.3826

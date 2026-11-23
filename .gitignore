@@ -1,0 +1,19 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Raw external biological datasets (download per data/external/DATASET_PROVENANCE.md)
+data/raw/*.gz
+data/raw/*.txt
+data/raw/*.tsv
+data/raw/original/
+
+# Local SQLite runtime query log
+data/processed/app_history.db
+
+# Virtual environments
+.venv/
+venv/
+env/

@@ -1,0 +1,45 @@
+# Original Reference Repository Schema Configuration
+# Compatible with the private dataset format documented in sevmardi/Protein-Protein-Networks:
+#   HumanPPI.txt, Functions.txt, Cancers.txt, Test1.txt, Test2.txt
+
+dataset_name: "Original_PPI_Schema"
+dataset_type: "original_schema"
+description: "Adapter configuration for the original private dataset format documented in sevmardi/Protein-Protein-Networks. Place files in data/raw/original/ to execute."
+
+paths:
+  data_dir: "data/raw/original"
+  human_ppi: "HumanPPI.txt"
+  functions: "Functions.txt"
+  cancers: "Cancers.txt"
+  test1: "Test1.txt"
+  test2: "Test2.txt"
+
+preprocessing:
+  score_threshold: 0
+  remove_self_loops: true
+  deduplicate_edges: true
+  strip_cancer_leak_terms: false
+  max_tfidf_features: 500
+  functional_svd_dims: 32
+  spectral_embedding_dims: 32
+
+centrality:
+  betweenness_k_pivots: 400
+  pagerank_alpha: 0.85
+  pagerank_max_iter: 200
+  eigenvector_max_iter: 300
+
+training:
+  random_seed: 42
+  test_size: 0.15
+  val_size: 0.15
+  cv_folds: 5
+  gnn_epochs: 120
+  gnn_hidden_dim: 64
+  gnn_lr: 0.01
+  gnn_weight_decay: 0.0005
+  gnn_patience: 20
+
+attribution:
+  reference_repo: "https://github.com/sevmardi/Protein-Protein-Networks"
+  note: "Original dataset files are not publicly distributed per reference README."

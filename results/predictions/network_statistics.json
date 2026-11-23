@@ -1,0 +1,123 @@
+{
+  "num_proteins": 17525,
+  "num_interactions": 282864,
+  "isolated_proteins_in_graph": 0,
+  "network_density": 0.001842,
+  "average_degree": 32.2812,
+  "median_degree": 15.0,
+  "std_degree": 49.9757,
+  "max_degree": 872,
+  "p95_degree": 126.0,
+  "average_weighted_degree": 27.9431,
+  "average_edge_weight": 0.8656,
+  "connected_components": 82,
+  "giant_component_size": 17336,
+  "giant_component_fraction": 0.989215,
+  "top_5_component_sizes": [
+    17336,
+    6,
+    4,
+    4,
+    4
+  ],
+  "average_clustering_coefficient": 0.357142,
+  "global_transitivity": 0.317246,
+  "cancer_protein_count": 767,
+  "non_cancer_protein_count": 16758,
+  "cancer_avg_degree": 73.7014,
+  "cancer_median_degree": 48.0,
+  "non_cancer_avg_degree": 30.3854,
+  "non_cancer_median_degree": 14.0,
+  "degree_distribution_bins": [
+    {
+      "range": "1-1",
+      "count": 1391
+    },
+    {
+      "range": "2-4",
+      "count": 2663
+    },
+    {
+      "range": "5-9",
+      "count": 2805
+    },
+    {
+      "range": "10-19",
+      "count": 3188
+    },
+    {
+      "range": "20-49",
+      "count": 4234
+    },
+    {
+      "range": "50-99",
+      "count": 1898
+    },
+    {
+      "range": "100-249",
+      "count": 1167
+    },
+    {
+      "range": "250-499",
+      "count": 171
+    },
+    {
+      "range": "500-872",
+      "count": 8
+    }
+  ],
+  "preprocessing": {
+    "dataset_name": "STRING_v12.5_COSMIC_v104",
+    "dataset_type": "string_cosmic",
+    "initial_filtered_edge_rows": 565728,
+    "self_loops_removed": 0,
+    "duplicate_reverse_edges_removed": 282864,
+    "final_undirected_edges": 282864,
+    "isolated_proteins_excluded_from_info": 2174,
+    "final_ppi_proteins": 17525,
+    "cancer_proteins": 767,
+    "non_cancer_proteins": 16758,
+    "cancer_prevalence": 0.043766,
+    "missing_functional_annotations": 3,
+    "annotated_protein_fraction": 0.9998,
+    "cancer_leak_terms_stripped": true,
+    "provenance": {
+      "dataset_name": "STRING_v12.5_COSMIC_v104",
+      "dataset_type": "string_cosmic",
+      "string_links_file": "9606.protein.links.v12.5.txt.gz",
+      "string_info_file": "9606.protein.info.v12.5.txt.gz",
+      "cosmic_file": "Cosmic_CancerGeneCensus_v104_GRCh38.tsv.gz",
+      "score_threshold": 700,
+      "raw_string_edge_rows": 10826054,
+      "filtered_edge_rows_before_dedup": 565728,
+      "total_string_proteins_in_info": 19699,
+      "cosmic_census_genes_loaded": 768,
+      "cosmic_matched_primary": 751,
+      "cosmic_matched_synonym": 23,
+      "attribution": {
+        "string_url": "https://string-db.org/",
+        "string_license": "CC BY 4.0 (Creative Commons Attribution 4.0)",
+        "cosmic_url": "https://cancer.sanger.ac.uk/census",
+        "cosmic_license": "COSMIC Academic / Non-Commercial License (Wellcome Sanger Institute)"
+      }
+    }
+  },
+  "centrality_computation": {
+    "num_proteins": 17525,
+    "betweenness_method": "brandes_k_pivots_400",
+    "closeness_method": "pivot_wf_600",
+    "timings_seconds": {
+      "degree": 0.199,
+      "betweenness": 80.845,
+      "closeness": 42.632,
+      "eigenvector": 41.832,
+      "pagerank": 0.491,
+      "clustering": 8.915,
+      "k_core": 0.481,
+      "network_constraint": 6.422
+    },
+    "approximation_validation": {
+      "betweenness_approx_spearman_sub250": 0.97
+    }
+  }
+}
